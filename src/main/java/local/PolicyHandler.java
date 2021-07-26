@@ -24,6 +24,7 @@ public class PolicyHandler{
         payment.setCafeNm(requested.getCafeNm());
         payment.setCustNm(requested.getCustNm());
         payment.setPrice(requested.getPrice());
+        payment.setCount(requested.getCount());
         payment.setPaymentStatus("PAYMENT_REQUESTED");
         paymentRepository.save(payment);
         

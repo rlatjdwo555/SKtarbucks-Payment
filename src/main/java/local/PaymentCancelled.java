@@ -6,6 +6,7 @@ public class PaymentCancelled extends AbstractEvent {
     private Long id;
     private Long orderId;
     private int price;
+    private int count;
     private String custNm;
     private String cafeNm;
     private String paymentStatus;
@@ -57,6 +58,14 @@ public class PaymentCancelled extends AbstractEvent {
 
     public void setPaymentStatus(String paymentStatus) {
         this.paymentStatus = paymentStatus;
+    }
+
+    public void setCount(int count){
+        this.count = count;
+    }
+
+    public int getCount(){
+        return count;
     }
 }
 
